@@ -14,13 +14,14 @@
 
 
 import sys
+sys.path.insert(0, '/home/Object-Proposal/src/DeepBox/caffe-fast-rcnn/python')
+import caffe
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__),
                                                 '..', 'src')))
 
 from fast_dbox_config import cfg, cfg_from_file
 import fast_dbox_test
-import caffe
 import argparse
 import pprint
 import time
